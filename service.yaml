@@ -1,16 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  labels:
-    app.kubernetes.io/instance: javagradleproject
   name: javagradleproject
-  namespace: argocd
 spec:
-  ports:
-    - nodePort: 31000
-      port: 8000
-      protocol: TCP
-      targetPort: 80
   selector:
     app: myapp
-  type: NodePort
+  type: NodePort  
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80
+      nodePort: 31000
