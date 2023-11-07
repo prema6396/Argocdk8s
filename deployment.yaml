@@ -19,5 +19,5 @@ spec:
           image: prema6396/javanewproject:82
           ports:
            - containerPort: 80
-     imagePullSecrets:
+      imagePullSecrets:
         - name: nexus-registry-secret
