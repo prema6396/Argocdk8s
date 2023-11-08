@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: javagradleproject
-          image: prema6396/javanewproject:86
+          image: prema6396/javanewproject:88
           ports:
            - containerPort: 80
      imagePullSecrets:
