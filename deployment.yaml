@@ -16,7 +16,9 @@ spec:
     spec:
       containers:
         - name: javagradleproject
-          image: prema6396/javanewproject:50
+          image: prema6396/javanewproject:84
           ports:
            - containerPort: 80
+      imagePullSecrets:
+        - name: nexus-repo-secret
      
